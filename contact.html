@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			body{
+			background-color:#ffffcc;
+			}
+			h1{
+				color:#669900;
+				font-family:Calibri;
+				text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				}
+			.active{
+				background-color:#669900;
+			}
+			li {
+				float: left;
+				}
+			li a {
+				display: block;
+				color: white;
+				font-family:Calibri;
+				font-weight:bold;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				}
+
+			li a:hover {
+				background-color: #669900;
+					}
+			img{
+				border-radius: 8px;
+			}
+			table:not(.content) tr td b{color:#669900;
+				font-family:Calibri;
+				font-size:40px;
+				vertical-align:bottom;
+				text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+			}
+			body p{
+			font-family:Calibri;
+			}
+			
+		</style>
+		<title>Shruti Sonawane</title>
+		<br>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td><img src="me.jpg" width="150" height="150"/></td>
+				<td><br><br><br><br><br><br><b>Shruti Sonawane</b></td>
+			</tr>
+		</table>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="skillset.html">Skill Set</a></li>
+			<li><a href="academic.html">Academic Projects</a></li>
+			<li><a href="workex.html">Work Experience</a></li>
+			<li><a class="active" href="contact.html">Contact</a></li>
+		</ul>
+		<table class="content">
+			<tr>
+				<td>
+					<p><b>Address:</b><br>1130 E Orange Street,<br>Apt. 112, Tempe, Arizona<br>Zip: 85281</p>
+					<p><b>Mobile:</b><br>+1 (650)-720-8823</p>
+					<p><b>Email:</b><br><a href="mailto:Shruti.Sonawane@asu.edu">Shruti.Sonawane@asu.edu</a></p>
+					<p>
+						<a target="_blank" href="https://www.facebook.com/profile.php?id=100009792784478">
+						<img src="Facebook.jpg" height="30" width="30"/>
+						</a>
+						<a target="_blank" href="https://www.linkedin.com/in/shrutisonawane0909">
+						<img src="LinkedIn.jpg" height="30" width="30"/>
+						</a>
+						<a target="_blank" href="https://github.com/ssonawane0909">
+						<img src="git.jpg" height="30" width="30"/>
+						</a>
+					</p>
+				</td>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+				<script>
+					function fill()
+					{
+						var temptext = document.getElementById('textspace');
+						temptext.innerHTML = "";
+					}
+					
+					function reset()
+					{
+						var temptext = document.getElementById('textspace');
+						temptext.innerHTML = "Add a comment...";
+					}
+				</script>
+				<td valign="top">
+					<br><br>
+					<img src="mail.jpg" width="50px" height="50px"></img>
+					<br>
+					<form>
+						<textarea id="textspace" rows="3" cols="50" style="font-family:Calibri; color:gray;" onfocus="fill()" onblur="reset()">
+							Add a comment...
+						</textarea>
+					</form>
+					<button type="input" class="post" width="80px" style="background-color:#669900; border: none;
+						color:white; padding:5px 5px; text-align:center; text-decoration:none;
+						font-size: 15px;margin: 4px 2px; cursor: pointer;">Post a message!</button>
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+		
+	</body>
+
+</html>

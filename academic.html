@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			body{
+			background-color:#ffffcc;
+			}
+			h1{
+				color:#669900;
+				font-family:Calibri;
+				text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				}
+			.active{
+				background-color:#669900;
+			}
+			li {
+				float: left;
+				}
+			li a {
+				display: block;
+				color: white;
+				font-family:Calibri;
+				font-weight:bold;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				}
+
+			li a:hover {
+				background-color: #669900;
+					}
+			img{
+				border-radius: 8px;
+			}
+			table:not(.proj_summary) tr td b{color:#669900;
+				font-family:Calibri;
+				font-size:40px;
+				vertical-align:bottom;
+				text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+			}
+			body p{
+			font-family:Calibri;
+			text-align:justify;
+			}
+			tr.space>td{
+			padding-bottom:1em;
+			}
+			
+		</style>
+		<title>Shruti Sonawane</title>
+		<br>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td><img src="me.jpg" width="150" height="150"/></td>
+				<td><br><br><br><br><br><br><b>Shruti Sonawane</b></td>
+			</tr>
+		</table>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="skillset.html">Skill Set</a></li>
+			<li><a class="active" href="academic.html">Academic Projects</a></li>
+			<li><a href="workex.html">Work Experience</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		
+		<br>
+		<ul class="tab">
+			<li><a href="#" class="tablinks" onclick="openCourse(event, 'Security')">Security</a></li>
+			<li><a href="#" class="tablinks" onclick="openCourse(event, 'Software Design')">Software Design</a></li>
+		</ul>
+		<script>
+			function openCourse(evt, courseName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+					}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tabcontent.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+				document.getElementById(courseName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+		<div id="Security" class="tabcontent">
+		<table class="proj_summary">
+			<tr>
+				<td><b>Project:</b></td>
+				<td><a target="_blank" href="https://github.com/ssonawane0909/Simple-HTTP-1.1-Client-and-Server-with-Backdoor"><b>Simple HTTP 1.1 Backdoor Server</b></a></td>
+			</tr>
+			<tr>
+				<td><b>Description:</b></td>
+				<td>HTTP 1.1 Backdoor Server simply executes any bash command sent in the URI.</td>
+			</tr>
+			<tr>
+				<td><b>Skills:</b></td>
+				<td>Python 2.7, BASH, Ubuntu 14.04, MAKE build automation tool</td>
+			</tr>	
+		</table>
+		</div>
+		
+		<div id="Software Design" class="tabcontent">
+		<table class="proj_summary">
+		<tr>
+				<td><b>Project:</b></td>
+				<td><a target="_blank" href="https://github.com/ssonawane0909/Simple-REST-Web-Service"><b>Simple Plain Old XML (POX) REST web service</b></a></td>
+			</tr>
+			<tr>
+				<td><b>Description:</b></td>
+				<td>Designed a simple REST web server, which qualifies as a level 0 web service as per the Richardson Maturity Model(RMM).</td>
+			</tr>
+			<tr class="space">
+				<td><b>Skills:</b></td>
+				<td>Java, Maven build automation tool, JAXB, XML, Netbeans IDE</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+
+</html>

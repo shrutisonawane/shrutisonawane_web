@@ -45,6 +45,25 @@
 				vertical-align:bottom;
 				text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 			}
+			table:not(.imgTable) {
+				border-collapse: collapse;
+				border-color:black;
+				width: 100%;
+			}
+
+			th, td {
+				text-align: left;
+				padding: 8px;
+				font-family: Calibri;
+			}
+			th {
+				background-color: #669900;
+				color: white;
+			}
+			tr:nth-child(even){
+				background-color: #ddff99;
+			}
+			
 			body p{
 			font-family:Calibri;
 			text-align:justify;
@@ -58,7 +77,7 @@
 		<br>
 	</head>
 	<body>
-		<table>
+		<table class="imgTable">
 			<tr>
 				<td><img src="me.JPG" width="150" height="150"/></td>
 				<td><br><br><br><br><br><br><b>Shruti Sonawane</b></td>
@@ -73,10 +92,7 @@
 		</ul>
 		
 		<br>
-		<ul class="tab">
-			<li><a href="#" class="tablinks" onclick="openCourse(event, 'Security')">Security</a></li>
-			<li><a href="#" class="tablinks" onclick="openCourse(event, 'Software Design')">Software Design</a></li>
-		</ul>
+
 		<script>
 			function openCourse(evt, courseName) {
 				var i, tabcontent, tablinks;
@@ -92,39 +108,29 @@
 				evt.currentTarget.className += " active";
 			}
 		</script>
-		<div id="Security" class="tabcontent">
 		<table class="proj_summary">
 			<tr>
-				<td><b>Project:</b></td>
+				<th><b>Project</b></th>
+				<th><b>Description</b></th>
+				<th><b>Skills Involved</b></th>
+			</tr>
+			<tr>
 				<td><a target="_blank" href="https://github.com/ssonawane0909/Simple-HTTP-1.1-Client-and-Server-with-Backdoor"><b>Simple HTTP 1.1 Backdoor Server</b></a></td>
-			</tr>
-			<tr>
-				<td><b>Description:</b></td>
-				<td>HTTP 1.1 Backdoor Server simply executes any bash command sent in the URI.</td>
-			</tr>
-			<tr>
-				<td><b>Skills:</b></td>
+				<td>HTTP 1.1 Backdoor Server simply executes any bash shell command sent in the URI.</td>
 				<td>Python 2.7, BASH, Ubuntu 14.04, MAKE build automation tool</td>
-			</tr>	
-		</table>
-		</div>
-		
-		<div id="Software Design" class="tabcontent">
-		<table class="proj_summary">
-		<tr>
-				<td><b>Project:</b></td>
-				<td><a target="_blank" href="https://github.com/ssonawane0909/Simple-REST-Web-Service"><b>Simple Plain Old XML (POX) REST web service</b></a></td>
 			</tr>
 			<tr>
-				<td><b>Description:</b></td>
+				<td><a target="_blank" href="https://github.com/ssonawane0909/Simple-REST-Web-Service"><b>Simple Plain Old XML (POX) REST web service</b></a></td>
 				<td>Designed a simple REST web server, which qualifies as a level 0 web service as per the Richardson Maturity Model(RMM).</td>
-			</tr>
-			<tr class="space">
-				<td><b>Skills:</b></td>
 				<td>Java, Maven build automation tool, JAXB, XML, Netbeans IDE</td>
 			</tr>
+			<tr>
+			<td><a target="_blank" href="https://github.com/ssonawane0909/AppStoreUsingBST"><b>App Store in C++</b></td>
+			<td>This project implements a simple App Store which has categories such as News, Games, Weather and items under each specific category. 
+				The App Store structure is implemented using Binary Search Tree and Hash Table for indexed search.</td>
+			<td>C++, MAKE build automation tool</td>
 		</table>
-		</div>
+		
 	</body>
 
 </html>
